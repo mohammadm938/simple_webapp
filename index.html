@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page</title>
+    <title>Webapp</title>
     <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
+    <script src="tailwindcss.js"></script>
+    <!-- <script
       src="https://kit.fontawesome.com/8d9a5d779f.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+
+    <!-- <script src="script.js"></script> -->
 
     <style type="text/tailwindcss">
       @layer components {
@@ -21,111 +23,9 @@
     </style>
   </head>
   <body class="mainFlexItems">
-    <div class="p-10 pt-0 w-2/4 mainFlexItems flex-col">
-      <!-- header content -->
-      <header class="mainFlexItems w-full h-24 justify-between">
-        <!-- left buttons -->
-        <div class="font-bold"><h4>Site name</h4></div>
-
-        <!-- right buttons -->
-        <nav class="mainFlexItems">
-          <ul class="mainFlexItems space-x-10 font-bold">
-            <li><p>Page</p></li>
-            <li><p>Page</p></li>
-            <li><p>Page</p></li>
-            <li class="mainFlexItems w-24">
-              <button
-                class="w-full bg-black p-2 rounded-md text-white transition-all hover:transition-all hover:shadow-xl"
-              >
-                Button
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- main content -->
-      <main class="flex items-center justify-between w-full mt-16 space-y-2">
-        <!-- About us paragraph left -->
-        <div class="flex-col space-y-5 w-3/6">
-          <h2 class="text-4xl font-bold">About</h2>
-          <h4 class="text-gray-500 text-xs">
-            Subheading for description or instructions
-          </h4>
-          <p>
-            Body text for your whole article or post. We’ll put in some lorem
-            ipsum to show how a filled-out page might look:
-          </p>
-          <p>
-            Excepteur efficient emerging, minim veniam anim aute carefully
-            curated Ginza conversation exquisite perfect nostrud nisi intricate
-            Content. Qui international first-class nulla ut. Punctual
-            adipisicing, essential lovely queen tempor eiusmod irure. Exclusive
-            izakaya charming Scandinavian impeccable aute quality of life soft
-            power pariatur Melbourne occaecat discerning. Qui wardrobe aliquip,
-            et Porter destination Toto remarkable officia Helsinki excepteur
-            Basset hound. Zürich sleepy perfect consectetur.
-          </p>
-        </div>
-
-        <!-- About us image right -->
-        <div class="w-2/5 h-full">
-          <img
-            class="w-full h-full rounded-md shadow-lg"
-            src="eiffel-tower-night.avif"
-            alt="eiffel tower"
-          />
-        </div>
-      </main>
-
-      <!-- footer contet -->
-      <footer class="flex items-center justify-between w-full mt-16">
-        <!-- div left -->
-        <div class="flex-col space-y-24">
-          <h3 class="text-black text-lg">Site name</h3>
-          <!-- icon list -->
-          <div class="mainFlexItems space-x-8 text-xl text-gray-500">
-            <i
-              class="hover:cursor-pointer hover:text-black transition-all hover:transition-all hover:shadow-lg fa fa-instagram"
-              aria-hidden="true"
-            ></i>
-            <i
-              class="hover:cursor-pointer hover:text-black transition-all hover:transition-all hover:shadow-lg fa fa-telegram"
-              aria-hidden="true"
-            ></i>
-            <i
-              class="hover:cursor-pointer hover:text-black transition-all hover:transition-all hover:shadow-lg fa fa-twitter"
-              aria-hidden="true"
-            ></i>
-            <i
-              class="hover:cursor-pointer hover:text-black transition-all hover:transition-all hover:shadow-lg fa fa-github"
-              aria-hidden="true"
-            ></i>
-          </div>
-        </div>
-
-        <!-- list right -->
-        <div class="mainFlexItems space-x-12 text-md w-2/4">
-          <ul class="flex-col space-y-5 w-1/4">
-            <h3 class="font-bold">Topic</h3>
-            <li>Page</li>
-            <li>Page</li>
-            <li>Page</li>
-          </ul>
-          <ul class="flex-col space-y-5 w-1/4">
-            <h3 class="font-bold">Topic</h3>
-            <li>Page</li>
-            <li>Page</li>
-            <li>Page</li>
-          </ul>
-          <ul class="flex-col space-y-5 w-1/4">
-            <h3 class="font-bold">Topic</h3>
-            <li>Page</li>
-            <li>Page</li>
-            <li>Page</li>
-          </ul>
-        </div>
-      </footer>
+    <div class="p-10 w-2/4 mainFlexItems flex-col">
+      <h1>User Info</h1>
+      <pre id="user_info">Loading...</pre>
     </div>
   </body>
 </html>
