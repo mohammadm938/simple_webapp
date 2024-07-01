@@ -46,6 +46,20 @@
         `;
       }
 
+      function accept_signup() {
+        // after click on btn then information send to bot
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+          const info = {
+            id: tg_id,
+            first_name: tg_first_name,
+            last_name: tg_last_name,
+            username: tg_username,
+          };
+          console.log(info);
+        });
+      }
+
       window.onload = () => {
         get_user_info();
         console.log(initDataUnsafe);
@@ -53,8 +67,13 @@
     </script>
 
     <div class="p-10 w-full mainFlexItems flex-col">
-      <h1>User Info</h1>
+      <h1 class="font-bold text-2xl">User Info</h1>
       <div class="leading-10 rounded-md p-2" id="user_info">Loading...</div>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-5"
+      >
+        Sign up
+      </button>
     </div>
   </body>
 </html>
