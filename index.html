@@ -22,8 +22,8 @@
     </style>
     <style>
       body {
-        background-color: black;
-        color: white;
+        background-color: var(--tg-theme-bg-color);
+        color: var(--tg-theme-bg-color);
       }
     </style>
   </head>
@@ -34,7 +34,7 @@
       const initDataUnsafe = tg.initDataUnsafe;
       const tg_id = initDataUnsafe.user.id;
       const tg_first_name = initDataUnsafe.user.first_name;
-      const tg_last_name = initDataUnsafe.user.last_name;
+      const tg_last_name = initDataUnsafe.user.last_name || "";
 
       function get_user_info() {
         const user_info = document.getElementById("user_info");
@@ -44,15 +44,15 @@
           <p>Last Name: ${tg_last_name}</p>
         `;
       }
-
-      window.onload = ()=>{
-        get_user_info();
-      };
     </script>
 
     <div class="p-10 w-2/4 mainFlexItems flex-col">
       <h1>User Info</h1>
-      <pre id="user_info">Loading...</pre>
+      <div class="leading-10 rounded-md p-2" id="user_info">
+        <p>ID: 549157192</p>
+        <p>First Name: Mohammad</p>
+        <p>Last Name:</p>
+      </div>
     </div>
   </body>
 </html>
