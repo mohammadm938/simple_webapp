@@ -20,7 +20,6 @@
         }
       }
     </style>
-
     <style>
       body {
         background-color: black;
@@ -29,6 +28,24 @@
     </style>
   </head>
   <body class="mainFlexItems">
+    <script>
+      const tg = window.Telegram.WebApp;
+      const initData = tg.initData;
+      const initDataUnsafe = tg.initDataUnsafe;
+      const tg_id = initDataUnsafe.user.id;
+      const tg_first_name = initDataUnsafe.user.first_name;
+      const tg_last_name = initDataUnsafe.user.last_name;
+
+      function get_user_info() {
+        const user_info = document.getElementById("user_info");
+        user_info.innerHTML = `
+          <p>ID: ${tg_id}</p>
+          <p>First Name: ${tg_first_name}</p>
+          <p>Last Name: ${tg_last_name}</p>
+        `;
+      }
+    </script>
+
     <div class="p-10 w-2/4 mainFlexItems flex-col">
       <h1>User Info</h1>
       <pre id="user_info">Loading...</pre>
