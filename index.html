@@ -34,14 +34,15 @@
       const initDataUnsafe = tg.initDataUnsafe;
       const tg_id = initDataUnsafe.user.id;
       const tg_first_name = initDataUnsafe.user.first_name;
-      const tg_last_name = initDataUnsafe.user.last_name || "";
+      const tg_last_name = initDataUnsafe.user.last_name;
+      const tg_username = initDataUnsafe.user.username;
 
       function get_user_info() {
         const user_info = document.getElementById("user_info");
         user_info.innerHTML = `
           <p>ID: ${tg_id}</p>
           <p>First Name: ${tg_first_name}</p>
-          <p>Last Name: ${tg_last_name}</p>
+          <p>Username: ${tg_username}</p>          
         `;
       }
 
